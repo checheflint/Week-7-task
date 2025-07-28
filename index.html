@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dignity Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header"><h1>Welcome to Dignity Restaurant</h1></div>
+  <div class="container">
+    <div class="menu-title">
+      <h2>Our Menu</h2>
+      <div class="menu" id="menu"></div>
+    </div>
+
+    <div class="cart">
+      <h2>Your Plate</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: ₦<span id="total">0</span></p>
+      <button id="submit-btn">Submit Order</button>
+      <button id="print-btn">Print Order</button>
+    </div>
+  </div>
+
+  <div id="success-modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Order submitted successfully!</p>
+      <p>Estimated delivery: 25–35 minutes</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
